@@ -1,0 +1,550 @@
+body {
+  height: 100%;
+  background: url('../images/halftone.png') rgb(255, 255, 255);
+  background-size: 200px 200px;
+  background-position: left top;
+  font: normal 1.125em/1.38 MuseoSans-300;
+  color: rgb(0, 0, 0);
+}
+
+.about-me {
+  display: block;
+  position: relative;
+  float: left;
+  width: 23.4953703703%;
+  height: 172px;
+  margin-left: 1.96398%;
+  border-radius: 5px;
+  background-color: #1abc9c;
+  overflow: hidden;
+}
+
+.about-me .element {
+  z-index: 44;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.about-me-icon {
+  display: block;
+  float: left;
+  width: 70px;
+  height: auto;
+  margin: 51px 0 0 32.99723%;
+  overflow: hidden;
+}
+
+.ascvd {
+  position: absolute;
+  top: 123px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  width: 764px;
+  height: 561px;
+  margin: 0 auto;
+}
+
+.ascvd-risk {
+  display: block;
+  position: relative;
+  float: left;
+  width: 23.4953703703%;
+  height: 172px;
+  border-radius: 5px;
+  background-color: #4f5aa8;
+  overflow: hidden;
+}
+
+.ascvd-risk .element {
+  z-index: 36;
+}
+
+.ascvd-risk-icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 34;
+  width: 83px;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.back-button {
+  display: block;
+  position: relative;
+  float: left;
+  z-index: 13;
+  width: 100px;
+  height: 38px;
+  margin: 48px 0 0 11.01852%;
+}
+
+.back-button .image {
+  position: relative;
+  float: left;
+  z-index: 11;
+  width: 19px;
+  margin-top: 5px;
+}
+
+.back-button .text {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 12;
+  width: 86%;
+  min-height: 38px;
+  margin: -34px 0 0 14%;
+  font: 1.556em MuseoSans-100;
+  text-align: center;
+  color: rgb(0,0,0);
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 885px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.button-containers {
+  width: 864px;
+  height: 364px;
+  margin: 334px auto 0;
+}
+
+.button-containers .canafeed {
+  display: block;
+  position: relative;
+  float: left;
+  width: 23.4953703703%;
+  height: 172px;
+  margin-left: 1.96398%;
+  border-radius: 5px;
+  background-color: rgb(97, 188, 81);
+  overflow: hidden;
+}
+
+.canafeed .element {
+  z-index: 40;
+}
+
+.canafeed .image {
+  float: left;
+}
+
+.canafeed-icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 38;
+  width: 85px;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.contact-me {
+  display: block;
+  position: relative;
+  float: left;
+  width: 23.4953703703%;
+  height: 172px;
+  margin: 20px 0 0 1.96398%;
+  border-radius: 5px;
+  background-color: rgb(235, 149, 50);
+  overflow: hidden;
+}
+
+.contact-me .element {
+  z-index: 64;
+}
+
+.container .container {
+  height: 61px;
+  margin: 0 auto;
+}
+
+.container .text {
+  float: left;
+  color: rgb(0, 0, 0);
+}
+
+.cube {
+  display: block;
+  width: 107px;
+  height: auto;
+  margin: 34px auto 0;
+  overflow: hidden;
+}
+
+.cube-utilities {
+  display: block;
+  position: relative;
+  float: left;
+  clear: both;
+  width: 23.4953703703%;
+  height: 172px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: rgb(224, 130, 131);
+  overflow: hidden;
+}
+
+.cube-utilities .element {
+  z-index: 60;
+}
+
+.description {
+  min-height: 64px;
+  margin: 0 auto;
+  font: 1.278em/1.38 MuseoSans-100;
+  text-align: center;
+  color: rgb(179, 179, 179);
+}
+
+.element {
+  position: absolute;
+  top: 172px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 35px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.51);
+}
+
+.element .text {
+  width: 100%;
+  margin: 5px auto 0;
+  padding-top: 3px;
+  font-size: 0.889em;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.github {
+  display: block;
+  position: relative;
+  float: left;
+  width: 23.4953703703%;
+  height: 172px;
+  margin: 20px 0 0 2.07972%;
+  border-radius: 5px;
+  background-color: rgb(242, 38, 19);
+  overflow: hidden;
+}
+
+.github .element {
+  z-index: 56;
+}
+
+.github-icon {
+  display: block;
+  width: 59px;
+  height: auto;
+  margin: 57px auto 0;
+  overflow: hidden;
+}
+
+.header-text {
+  width: 100%;
+  height: 112px;
+  margin: 1px auto 0;
+}
+
+.home {
+  position: absolute;
+  top: 61px;
+  left: 0;
+  right: 0;
+  z-index: 72;
+  width: 864px;
+  height: 738px;
+  margin: 0 auto;
+}
+
+.id-heading {
+  float: left;
+  width: 371px;
+  height: 271px;
+  margin-left: 28.58435%;
+}
+
+.image {
+  display: block;
+  height: auto;
+  overflow: hidden;
+}
+
+.my-face {
+  display: block;
+  width: 160px;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.name {
+  min-height: 46px;
+  margin: 0 auto;
+  font: 400 2.056em/1.38 'Museo Sans';
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.plane {
+  display: block;
+  width: 65px;
+  height: auto;
+  margin: 57px auto 0;
+  overflow: hidden;
+}
+
+.stackoverflow {
+  display: block;
+  position: relative;
+  float: left;
+  width: 23.4953703703%;
+  height: 172px;
+  margin: 20px 0 0 1.96398%;
+  border-radius: 5px;
+  background-color: rgb(247, 202, 24);
+  overflow: hidden;
+}
+
+.stackoverflow .element {
+  z-index: 48;
+}
+
+.stackoverflow-icon {
+  display: block;
+  float: left;
+  width: 77px;
+  height: auto;
+  margin: 47px 0 0 31.02679%;
+  overflow: hidden;
+}
+
+.survey-fill {
+  display: block;
+  position: relative;
+  float: left;
+  width: 23.4953703703%;
+  height: 172px;
+  margin-left: 2.07972%;
+  border-radius: 5px;
+  background-color: rgb(235, 186, 31);
+  overflow: hidden;
+}
+
+.survey-fill .element {
+  z-index: 51;
+}
+
+.survey-fill .image {
+  width: 105px;
+  margin: 36px auto 0;
+}
+
+.surveyfill {
+  position: absolute;
+  top: 123px;
+  left: 0;
+  right: 0;
+  z-index: 23;
+  width: 764px;
+  height: 561px;
+  margin: 0 auto;
+}
+
+.text-13 p,
+.text-15 p {
+  margin-bottom: 1em;
+}
+
+.canafeed-2 {
+  position: absolute;
+  top: 123px;
+  left: 0;
+  right: 0;
+  z-index: 33;
+  width: 764px;
+  height: 561px;
+  margin: 0 auto;
+}
+
+.container-3 {
+  position: absolute;
+  left: 64.9194208115%;
+  z-index: 26;
+  width: 35.0785340314%;
+  height: 561px;
+}
+
+.container-4 {
+  float: left;
+  width: 56.4136125654%;
+  height: 458px;
+  margin-top: 59px;
+}
+
+.container-2,
+.container-5 {
+  width: 45.7076566125%;
+}
+
+.container-6 {
+  position: absolute;
+  left: 64.9194208115%;
+  z-index: 16;
+  width: 35.0785340314%;
+  height: 561px;
+}
+
+.container-1,
+.container-7 {
+  float: left;
+  width: 56.4136125654%;
+  height: 501px;
+  margin-top: 30px;
+}
+
+.container-8 {
+  width: 100%;
+}
+
+.container-9 {
+  position: absolute;
+  left: 64.9194208115%;
+  z-index: 3;
+  width: 35.0785340314%;
+  height: 561px;
+}
+
+.image-10 {
+  position: absolute;
+  top: 84px;
+  left: 8.2089552238%;
+  z-index: 15;
+  width: 226px;
+}
+
+.image-11,
+.image-7 {
+  float: left;
+  width: 61px;
+}
+
+.image-12 {
+  float: left;
+  clear: both;
+  width: 172px;
+  margin-left: 30.15879%;
+}
+
+.image-13 {
+  position: relative;
+  float: left;
+  z-index: 1;
+  width: 268px;
+}
+
+.image-14 {
+  position: absolute;
+  top: 82px;
+  left: 8.5820895522%;
+  z-index: 2;
+  width: 227px;
+}
+
+.image-3 {
+  width: 61px;
+}
+
+.image-4 {
+  clear: both;
+  width: 172px;
+  margin-left: 30.15879%;
+}
+
+.image-5 {
+  position: relative;
+  z-index: 24;
+  width: 268px;
+}
+
+.image-6 {
+  position: relative;
+  clear: both;
+  z-index: 25;
+  width: 227px;
+  margin: -479px 0 0 8.20896%;
+}
+
+.image-8 {
+  width: 172px;
+  margin: 342px auto 0;
+}
+
+.image-9 {
+  position: relative;
+  float: left;
+  z-index: 14;
+  width: 268px;
+}
+
+.text-11 {
+  clear: both;
+  width: 100%;
+  min-height: 74px;
+  margin-top: 10px;
+  font-size: 1em;
+  text-align: center;
+}
+
+.text-10,
+.text-12 {
+  width: 59.8984771573%;
+  min-height: 30px;
+  margin: 14px 0 0 9.10533%;
+  font-family: MuseoSans-700;
+  font-size: 1.389em;
+}
+
+.text-14 {
+  width: 81.6705336426%;
+  min-height: 30px;
+  margin: 14px 0 0 4.17271%;
+  font-family: MuseoSans-700;
+  font-size: 1.389em;
+}
+
+.text-13,
+.text-15 {
+  clear: both;
+  width: 100%;
+  min-height: 74px;
+  margin-top: 23px;
+  font-size: 1em;
+  text-align: center;
+}
+
+._container-1 {
+  position: relative;
+  width: 100%;
+  height: 885px;
+  margin: 0 auto;
+}

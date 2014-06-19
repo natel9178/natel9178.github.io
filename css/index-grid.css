@@ -1,0 +1,28 @@
+.fluid-span-1 {
+  width: 23.5%;
+}
+
+.fluid-span-2 {
+  width: 49%;
+}
+
+.fluid-span-3 {
+  width: 74.5%;
+}
+
+.fluid-span-4 {
+  width: 100%;
+}
+
+.fluid-offset-1 {
+  margin-left: 25.5%;
+}
+
+.fluid-offset-2 {
+  margin-left: 51%;
+}
+
+.fluid-offset-3 {
+  margin-left: 76.5%;
+}
+
