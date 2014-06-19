@@ -13,16 +13,23 @@ body {
   float: left;
   width: 23.4953703703%;
   height: 172px;
-  margin-left: 1.96398%;
   border-radius: 5px;
   background-color: #1abc9c;
   overflow: hidden;
 }
 
-.about-me .element {
+.about-me-caption {
+  position: absolute;
+  top: 172px;
+  left: 0;
+  right: 0;
   z-index: 44;
+  width: 100%;
+  height: 35px;
+  margin: 0 auto;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.51);
 }
 
 .about-me-icon {
@@ -45,19 +52,69 @@ body {
   margin: 0 auto;
 }
 
+.ascvd-app-header {
+  width: 100%;
+  height: 61px;
+  margin: 0 auto;
+}
+
+.ascvd-app-header .image,
+.canafeed-app-header .image,
+.surveyfill-app-header .image {
+  float: left;
+  width: 61px;
+}
+
+.ascvd-app-name {
+  float: left;
+  width: 81.6705336426%;
+  min-height: 30px;
+  margin: 14px 0 0 4.17271%;
+  font: 1.389em/1.38 MuseoSans-700;
+  color: rgb(0, 0, 0);
+}
+
+.ascvd-caption {
+  position: absolute;
+  top: 172px;
+  left: 0;
+  right: 0;
+  z-index: 36;
+  width: 100%;
+  height: 35px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.51);
+}
+
+.ascvd-description,
+.surveyfill-description {
+  float: left;
+  clear: both;
+  width: 100%;
+  min-height: 74px;
+  margin-top: 23px;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+.ascvd-description-body,
+.canafeed-description-body {
+  float: left;
+  width: 56.4136125654%;
+  height: 501px;
+  margin-top: 30px;
+}
+
 .ascvd-risk {
   display: block;
   position: relative;
   float: left;
   width: 23.4953703703%;
   height: 172px;
+  margin-left: 2.00376%;
   border-radius: 5px;
   background-color: #4f5aa8;
   overflow: hidden;
-}
-
-.ascvd-risk .element {
-  z-index: 36;
 }
 
 .ascvd-risk-icon {
@@ -72,6 +129,14 @@ body {
   height: auto;
   margin: auto;
   overflow: hidden;
+}
+
+.ascvd-screenshot {
+  position: absolute;
+  left: 64.9194208115%;
+  z-index: 3;
+  width: 35.0785340314%;
+  height: 561px;
 }
 
 .back-button {
@@ -92,7 +157,7 @@ body {
   margin-top: 5px;
 }
 
-.back-button .text {
+.back-text {
   position: relative;
   float: left;
   clear: both;
@@ -100,7 +165,7 @@ body {
   width: 86%;
   min-height: 38px;
   margin: -34px 0 0 14%;
-  font: 1.556em MuseoSans-100;
+  font: 1.556em/1.38 MuseoSans-100;
   text-align: center;
   color: rgb(0,0,0);
 }
@@ -134,12 +199,26 @@ body {
   overflow: hidden;
 }
 
-.canafeed .element {
-  z-index: 40;
+.canafeed-app-description {
+  float: left;
+  clear: both;
+  width: 100%;
+  min-height: 74px;
+  margin-top: 10px;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
 }
 
-.canafeed .image {
-  float: left;
+.canafeed-caption {
+  position: absolute;
+  top: 172px;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  width: 100%;
+  height: 35px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.51);
 }
 
 .canafeed-icon {
@@ -156,6 +235,26 @@ body {
   overflow: hidden;
 }
 
+.canafeed-interface {
+  display: block;
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 25;
+  width: 227px;
+  height: auto;
+  margin: -479px 0 0 8.20896%;
+  overflow: hidden;
+}
+
+.canafeed-screenshot {
+  position: absolute;
+  left: 64.9194208115%;
+  z-index: 26;
+  width: 35.0785340314%;
+  height: 561px;
+}
+
 .contact-me {
   display: block;
   position: relative;
@@ -168,18 +267,33 @@ body {
   overflow: hidden;
 }
 
-.contact-me .element {
+.contact-me-caption {
+  position: absolute;
+  top: 172px;
+  left: 0;
+  right: 0;
   z-index: 64;
-}
-
-.container .container {
-  height: 61px;
+  width: 100%;
+  height: 35px;
   margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.51);
 }
 
-.container .text {
-  float: left;
-  color: rgb(0, 0, 0);
+.about-me-caption-text,
+.ascvd-caption-text,
+.canafeed-caption-text,
+.contact-me-caption-text,
+.cube-utilities-caption-text,
+.github-caption-text,
+.stackover-caption-text,
+.survey-fill-caption-text {
+  width: 100%;
+  margin: 5px auto 0;
+  padding-top: 3px;
+  font-size: 0.889em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(255, 255, 255);
 }
 
 .cube {
@@ -203,36 +317,25 @@ body {
   overflow: hidden;
 }
 
-.cube-utilities .element {
-  z-index: 60;
-}
-
-.description {
-  min-height: 64px;
-  margin: 0 auto;
-  font: 1.278em/1.38 MuseoSans-100;
-  text-align: center;
-  color: rgb(179, 179, 179);
-}
-
-.element {
+.cube-utilities-caption {
   position: absolute;
   top: 172px;
   left: 0;
   right: 0;
+  z-index: 60;
   width: 100%;
   height: 35px;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.51);
 }
 
-.element .text {
-  width: 100%;
-  margin: 5px auto 0;
-  padding-top: 3px;
-  font-size: 0.889em;
+.description {
   text-align: center;
-  color: rgb(255, 255, 255);
+}
+
+.description-4 p,
+.surveyfill-description p {
+  margin-bottom: 1em;
 }
 
 .github {
@@ -247,8 +350,16 @@ body {
   overflow: hidden;
 }
 
-.github .element {
+.github-caption {
+  position: absolute;
+  top: 172px;
+  left: 0;
+  right: 0;
   z-index: 56;
+  width: 100%;
+  height: 35px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.51);
 }
 
 .github-icon {
@@ -265,9 +376,16 @@ body {
   margin: 1px auto 0;
 }
 
+.header-text .description {
+  min-height: 64px;
+  margin: 0 auto;
+  font: 1.278em MuseoSans-100;
+  color: rgb(179, 179, 179);
+}
+
 .home {
   position: absolute;
-  top: 61px;
+  top: 65px;
   left: 0;
   right: 0;
   z-index: 72;
@@ -285,6 +403,16 @@ body {
 
 .image {
   display: block;
+  height: auto;
+  overflow: hidden;
+}
+
+.iphone {
+  display: block;
+  position: relative;
+  float: left;
+  z-index: 24;
+  width: 268px;
   height: auto;
   overflow: hidden;
 }
@@ -325,8 +453,16 @@ body {
   overflow: hidden;
 }
 
-.stackoverflow .element {
+.stackoverflow-caption {
+  position: absolute;
+  top: 172px;
+  left: 0;
+  right: 0;
   z-index: 48;
+  width: 100%;
+  height: 35px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.51);
 }
 
 .stackoverflow-icon {
@@ -344,19 +480,27 @@ body {
   float: left;
   width: 23.4953703703%;
   height: 172px;
-  margin-left: 2.07972%;
+  margin-left: 2.03993%;
   border-radius: 5px;
   background-color: rgb(235, 186, 31);
   overflow: hidden;
 }
 
-.survey-fill .element {
-  z-index: 51;
-}
-
 .survey-fill .image {
   width: 105px;
   margin: 36px auto 0;
+}
+
+.survey-fill-caption {
+  position: absolute;
+  top: 172px;
+  left: 0;
+  right: 0;
+  z-index: 51;
+  width: 100%;
+  height: 35px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.51);
 }
 
 .surveyfill {
@@ -370,9 +514,43 @@ body {
   margin: 0 auto;
 }
 
-.text-13 p,
-.text-15 p {
-  margin-bottom: 1em;
+.surveyfill .description-body {
+  float: left;
+  width: 56.4136125654%;
+  height: 458px;
+  margin-top: 59px;
+}
+
+.canafeed-app-header,
+.surveyfill-app-header {
+  width: 45.7076566125%;
+  height: 61px;
+  margin: 0 auto;
+}
+
+.canafeed-app-name,
+.surveyfill-app-namea {
+  float: left;
+  width: 59.8984771573%;
+  min-height: 30px;
+  margin: 14px 0 0 9.10533%;
+  font: 1.389em/1.38 MuseoSans-700;
+  color: rgb(0, 0, 0);
+}
+
+.surveyfill-screenshot {
+  position: absolute;
+  left: 64.9194208115%;
+  z-index: 16;
+  width: 35.0785340314%;
+  height: 561px;
+}
+
+._container {
+  position: relative;
+  width: 100%;
+  height: 885px;
+  margin: 0 auto;
 }
 
 .canafeed-2 {
@@ -386,83 +564,22 @@ body {
   margin: 0 auto;
 }
 
-.container-3 {
-  position: absolute;
-  left: 64.9194208115%;
-  z-index: 26;
-  width: 35.0785340314%;
-  height: 561px;
-}
-
-.container-4 {
-  float: left;
-  width: 56.4136125654%;
-  height: 458px;
-  margin-top: 59px;
-}
-
-.container-2,
-.container-5 {
-  width: 45.7076566125%;
-}
-
-.container-6 {
-  position: absolute;
-  left: 64.9194208115%;
-  z-index: 16;
-  width: 35.0785340314%;
-  height: 561px;
-}
-
-.container-1,
-.container-7 {
-  float: left;
-  width: 56.4136125654%;
-  height: 501px;
-  margin-top: 30px;
-}
-
-.container-8 {
-  width: 100%;
-}
-
-.container-9 {
-  position: absolute;
-  left: 64.9194208115%;
-  z-index: 3;
-  width: 35.0785340314%;
-  height: 561px;
-}
-
-.image-10 {
-  position: absolute;
-  top: 84px;
-  left: 8.2089552238%;
-  z-index: 15;
-  width: 226px;
-}
-
-.image-11,
-.image-7 {
-  float: left;
-  width: 61px;
-}
-
-.image-12 {
+.image-10,
+.image-4 {
   float: left;
   clear: both;
   width: 172px;
   margin-left: 30.15879%;
 }
 
-.image-13 {
+.image-11 {
   position: relative;
   float: left;
   z-index: 1;
   width: 268px;
 }
 
-.image-14 {
+.image-12 {
   position: absolute;
   top: 82px;
   left: 8.5820895522%;
@@ -470,81 +587,22 @@ body {
   width: 227px;
 }
 
-.image-3 {
-  width: 61px;
-}
-
-.image-4 {
-  clear: both;
-  width: 172px;
-  margin-left: 30.15879%;
-}
-
-.image-5 {
-  position: relative;
-  z-index: 24;
-  width: 268px;
-}
-
 .image-6 {
-  position: relative;
-  clear: both;
-  z-index: 25;
-  width: 227px;
-  margin: -479px 0 0 8.20896%;
-}
-
-.image-8 {
   width: 172px;
   margin: 342px auto 0;
 }
 
-.image-9 {
+.image-7 {
   position: relative;
   float: left;
   z-index: 14;
   width: 268px;
 }
 
-.text-11 {
-  clear: both;
-  width: 100%;
-  min-height: 74px;
-  margin-top: 10px;
-  font-size: 1em;
-  text-align: center;
-}
-
-.text-10,
-.text-12 {
-  width: 59.8984771573%;
-  min-height: 30px;
-  margin: 14px 0 0 9.10533%;
-  font-family: MuseoSans-700;
-  font-size: 1.389em;
-}
-
-.text-14 {
-  width: 81.6705336426%;
-  min-height: 30px;
-  margin: 14px 0 0 4.17271%;
-  font-family: MuseoSans-700;
-  font-size: 1.389em;
-}
-
-.text-13,
-.text-15 {
-  clear: both;
-  width: 100%;
-  min-height: 74px;
-  margin-top: 23px;
-  font-size: 1em;
-  text-align: center;
-}
-
-._container-1 {
-  position: relative;
-  width: 100%;
-  height: 885px;
-  margin: 0 auto;
+.image-8 {
+  position: absolute;
+  top: 84px;
+  left: 8.2089552238%;
+  z-index: 15;
+  width: 226px;
 }

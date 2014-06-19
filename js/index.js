@@ -15,10 +15,10 @@
   var $canaFeed = $('.js-cana-feed');
   var $surveyFillCaption = $('.js-survey-fill-caption');
   var $surveyFill = $('.js-survey-fill');
-  var $aboutMeCaption = $('.js-about-me-caption');
-  var $aboutMe = $('.js-about-me');
   var $ascvdRiskCaption = $('.js-ascvd-risk-caption');
   var $ascvdRisk = $('.js-ascvd-risk');
+  var $aboutMeCaption = $('.js-about-me-caption');
+  var $aboutMe = $('.js-about-me');
   var $homeScreen = $('.js-home-screen');
 
 
