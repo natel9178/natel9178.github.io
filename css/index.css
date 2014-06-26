@@ -1,3 +1,27 @@
+@font-face{
+    font-family: "MuseoSans_100";
+    src: url('MuseoSans_100.otf'),
+    url('Thonburi-Bold.eot'); /* IE */
+}
+
+@font-face{
+    font-family: "MuseoSans_300";
+    src: url('MuseoSans_300.otf'),
+    url('MuseoSans_300.eot'); /* IE */
+}
+
+@font-face{
+    font-family: "MuseoSans_500";
+    src: url('MuseoSans_300.otf'),
+    url('MuseoSans_300.eot'); /* IE */
+}
+
+@font-face{
+    font-family: "MuseoSans_700";
+    src: url('MuseoSans_700.otf'),
+    url('MuseoSans_700.eot'); /* IE */
+}
+
 body {
   height: 100%;
   background: url('../images/halftone.png') rgb(255, 255, 255);
@@ -7,10 +31,17 @@ body {
   color: rgb(0, 0, 0);
 }
 
+.description-2 p,
+.skills-text p,
+.surveyfill-description p {
+  margin-bottom: 1em;
+}
+
 .about-me {
   display: block;
   position: relative;
   float: left;
+  z-index: 35;
   width: 23.4953703703%;
   height: 172px;
   border-radius: 5px;
@@ -23,7 +54,7 @@ body {
   top: 172px;
   left: 0;
   right: 0;
-  z-index: 44;
+  z-index: 34;
   width: 100%;
   height: 35px;
   margin: 0 auto;
@@ -41,28 +72,37 @@ body {
   overflow: hidden;
 }
 
+.about-me-screen {
+  position: absolute;
+  top: 296px;
+  left: 0;
+  right: 0;
+  z-index: 88;
+  width: 864px;
+  height: 756px;
+  margin: 0 auto;
+}
+
 .ascvd {
   position: absolute;
   top: 123px;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 108;
   width: 764px;
   height: 561px;
   margin: 0 auto;
 }
 
 .ascvd-app-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 105;
   width: 100%;
   height: 61px;
   margin: 0 auto;
-}
-
-.ascvd-app-header .image,
-.canafeed-app-header .image,
-.surveyfill-app-header .image {
-  float: left;
-  width: 61px;
 }
 
 .ascvd-app-name {
@@ -79,28 +119,26 @@ body {
   top: 172px;
   left: 0;
   right: 0;
-  z-index: 36;
+  z-index: 26;
   width: 100%;
   height: 35px;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.51);
 }
 
-.ascvd-description,
-.surveyfill-description {
+.ascvd-description {
   float: left;
-  clear: both;
   width: 100%;
   min-height: 74px;
-  margin-top: 23px;
+  margin-top: 84px;
   font-size: 1em;
+  line-height: 1.38;
+  text-align: center;
   color: rgb(0, 0, 0);
 }
 
-.ascvd-description-body,
-.canafeed-description-body {
-  float: left;
-  width: 56.4136125654%;
+.ascvd-description-body {
+  position: relative;
   height: 501px;
   margin-top: 30px;
 }
@@ -109,9 +147,10 @@ body {
   display: block;
   position: relative;
   float: left;
+  z-index: 27;
   width: 23.4953703703%;
   height: 172px;
-  margin-left: 2.00376%;
+  margin-left: 1.99834%;
   border-radius: 5px;
   background-color: #4f5aa8;
   overflow: hidden;
@@ -124,7 +163,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 34;
+  z-index: 24;
   width: 83px;
   height: auto;
   margin: auto;
@@ -132,39 +171,33 @@ body {
 }
 
 .ascvd-screenshot {
-  position: absolute;
-  left: 64.9194208115%;
-  z-index: 3;
-  width: 35.0785340314%;
-  height: 561px;
+  z-index: 101;
 }
 
 .back-button {
   display: block;
   position: relative;
   float: left;
-  z-index: 13;
   width: 100px;
   height: 38px;
   margin: 48px 0 0 11.01852%;
 }
 
 .back-button .image {
-  position: relative;
-  float: left;
-  z-index: 11;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  z-index: 1;
   width: 19px;
-  margin-top: 5px;
 }
 
 .back-text {
-  position: relative;
-  float: left;
-  clear: both;
-  z-index: 12;
+  position: absolute;
+  top: 0;
+  left: 14%;
+  z-index: 2;
   width: 86%;
   min-height: 38px;
-  margin: -34px 0 0 14%;
   font: 1.556em/1.38 MuseoSans-100;
   text-align: center;
   color: rgb(0,0,0);
@@ -182,15 +215,18 @@ body {
 }
 
 .button-containers {
+  float: left;
+  clear: both;
   width: 864px;
   height: 364px;
-  margin: 334px auto 0;
+  margin-top: 53px;
 }
 
 .button-containers .canafeed {
   display: block;
   position: relative;
   float: left;
+  z-index: 31;
   width: 23.4953703703%;
   height: 172px;
   margin-left: 1.96398%;
@@ -206,6 +242,8 @@ body {
   min-height: 74px;
   margin-top: 10px;
   font-size: 1em;
+  line-height: 1.38;
+  text-align: center;
   color: rgb(0, 0, 0);
 }
 
@@ -214,11 +252,16 @@ body {
   top: 172px;
   left: 0;
   right: 0;
-  z-index: 40;
+  z-index: 30;
   width: 100%;
   height: 35px;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.51);
+}
+
+.canafeed-description-body {
+  height: 501px;
+  margin-top: 30px;
 }
 
 .canafeed-icon {
@@ -228,7 +271,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 38;
+  z-index: 28;
   width: 85px;
   height: auto;
   margin: auto;
@@ -240,7 +283,7 @@ body {
   position: relative;
   float: left;
   clear: both;
-  z-index: 25;
+  z-index: 15;
   width: 227px;
   height: auto;
   margin: -479px 0 0 8.20896%;
@@ -248,17 +291,19 @@ body {
 }
 
 .canafeed-screenshot {
-  position: absolute;
-  left: 64.9194208115%;
-  z-index: 26;
-  width: 35.0785340314%;
-  height: 561px;
+  z-index: 16;
+}
+
+.canafeed-screenshot .iphone {
+  position: relative;
+  z-index: 14;
 }
 
 .contact-me {
   display: block;
   position: relative;
   float: left;
+  z-index: 55;
   width: 23.4953703703%;
   height: 172px;
   margin: 20px 0 0 1.96398%;
@@ -272,7 +317,7 @@ body {
   top: 172px;
   left: 0;
   right: 0;
-  z-index: 64;
+  z-index: 54;
   width: 100%;
   height: 35px;
   margin: 0 auto;
@@ -304,11 +349,19 @@ body {
   overflow: hidden;
 }
 
+.cube-utiliites-description-body {
+  float: left;
+  width: 56.4136125654%;
+  height: 328px;
+  margin-top: 117px;
+}
+
 .cube-utilities {
   display: block;
   position: relative;
   float: left;
   clear: both;
+  z-index: 51;
   width: 23.4953703703%;
   height: 172px;
   margin-top: 20px;
@@ -317,31 +370,120 @@ body {
   overflow: hidden;
 }
 
+.cube-utilities-app-description {
+  float: left;
+  clear: both;
+  width: 100%;
+  min-height: 74px;
+  margin-top: 25px;
+  font-size: 1em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.cube-utilities-app-header {
+  width: 55.9092227378%;
+  height: 61px;
+  margin: 0 auto;
+}
+
 .cube-utilities-caption {
   position: absolute;
   top: 172px;
   left: 0;
   right: 0;
-  z-index: 60;
+  z-index: 50;
   width: 100%;
   height: 35px;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.51);
 }
 
-.description {
-  text-align: center;
+.cube-utilities-icon {
+  display: block;
+  float: left;
+  width: 61px;
+  height: auto;
+  margin-top: 1px;
+  overflow: hidden;
 }
 
-.description-4 p,
-.surveyfill-description p {
-  margin-bottom: 1em;
+.cube-utilities-screen {
+  position: absolute;
+  top: 123px;
+  left: 0;
+  right: 0;
+  z-index: 98;
+  width: 764px;
+  height: 561px;
+  margin: 0 auto;
+}
+
+.cube-utilities-screenshot {
+  top: 0;
+  z-index: 92;
+}
+
+.cube-utilities-screenshot .image {
+  position: absolute;
+  top: 84px;
+  left: 23px;
+  z-index: 91;
+  width: 225px;
+}
+
+.cube-utilities-title {
+  float: left;
+  width: 67.2286344183%;
+  min-height: 30px;
+  margin: 15px 0 0 7.45688%;
+  font: 1.389em/1.38 MuseoSans-700;
+  color: rgb(0, 0, 0);
+}
+
+.cycling {
+  position: absolute;
+  top: 0;
+  left: 38.0800513698%;
+  z-index: 67;
+  width: 23.9726027397%;
+  height: 201px;
+}
+
+.cycling-picture {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -0.0089285715%;
+  z-index: 65;
+  width: 175px;
+  height: auto;
+  overflow: hidden;
+}
+
+.cycling-text {
+  position: absolute;
+  top: 175px;
+  left: -0.0089285715%;
+  z-index: 66;
+  width: 100%;
+  font-size: 1.056em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.description-body {
+  float: left;
+  width: 56.4136125654%;
 }
 
 .github {
   display: block;
   position: relative;
   float: left;
+  z-index: 47;
   width: 23.4953703703%;
   height: 172px;
   margin: 20px 0 0 2.07972%;
@@ -355,7 +497,7 @@ body {
   top: 172px;
   left: 0;
   right: 0;
-  z-index: 56;
+  z-index: 46;
   width: 100%;
   height: 35px;
   margin: 0 auto;
@@ -371,15 +513,22 @@ body {
 }
 
 .header-text {
+  position: relative;
+  float: left;
+  clear: both;
   width: 100%;
   height: 112px;
-  margin: 1px auto 0;
 }
 
 .header-text .description {
+  display: inline-block;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  z-index: 57;
   min-height: 64px;
-  margin: 0 auto;
-  font: 1.278em MuseoSans-100;
+  font: 1.278em/1.38 MuseoSans-100;
+  text-align: center;
   color: rgb(179, 179, 179);
 }
 
@@ -388,7 +537,7 @@ body {
   top: 65px;
   left: 0;
   right: 0;
-  z-index: 72;
+  z-index: 89;
   width: 864px;
   height: 738px;
   margin: 0 auto;
@@ -398,7 +547,7 @@ body {
   float: left;
   width: 371px;
   height: 271px;
-  margin-left: 28.58435%;
+  margin-left: 28.52648%;
 }
 
 .image {
@@ -407,27 +556,111 @@ body {
   overflow: hidden;
 }
 
+.interests-body {
+  position: absolute;
+  top: 62px;
+  left: -0.0128424658%;
+  z-index: 79;
+  width: 730px;
+  height: 421px;
+}
+
+.interests-first-row {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 71;
+  width: 100%;
+  height: 201px;
+}
+
+.interests-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 81;
+  width: 84.4907407407%;
+  height: 483px;
+  margin: 0 auto;
+}
+
+.interests-second-row {
+  position: absolute;
+  top: 220px;
+  left: 18.2170376712%;
+  z-index: 78;
+  width: 63.7371575342%;
+  height: 201px;
+}
+
+.interests-title {
+  float: left;
+  width: 17.2602739726%;
+  margin-left: 41.36772%;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  font-size: 1.333em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
 .iphone {
   display: block;
-  position: relative;
   float: left;
-  z-index: 24;
   width: 268px;
   height: auto;
   overflow: hidden;
 }
 
+.jogging {
+  position: absolute;
+  left: 0.0671636778%;
+  z-index: 74;
+  width: 37.6116596144%;
+  height: 201px;
+}
+
+.jogging-picture {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -0.1964285715%;
+  z-index: 72;
+  width: 175px;
+  height: auto;
+  overflow: hidden;
+}
+
+.jogging-text {
+  position: absolute;
+  top: 175px;
+  left: -0.1964285715%;
+  z-index: 73;
+  width: 100%;
+  font-size: 1.056em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
 .my-face {
   display: block;
+  float: left;
   width: 160px;
   height: auto;
-  margin: 0 auto;
+  margin-left: 28.43666%;
   overflow: hidden;
 }
 
 .name {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -0.1263477089%;
+  z-index: 58;
+  width: 100%;
   min-height: 46px;
-  margin: 0 auto;
   font: 400 2.056em/1.38 'Museo Sans';
   text-align: center;
   color: rgb(0, 0, 0);
@@ -441,10 +674,167 @@ body {
   overflow: hidden;
 }
 
+.programming {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 64;
+  width: 23.9726027397%;
+  height: 201px;
+}
+
+.programming-picture {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 62;
+  width: 175px;
+  height: auto;
+  overflow: hidden;
+}
+
+.programming-text {
+  position: absolute;
+  top: 175px;
+  left: 0;
+  z-index: 63;
+  width: 100%;
+  font-size: 1.056em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.school-extracurriculars {
+  position: absolute;
+  top: 0;
+  left: 57.008529787%;
+  z-index: 77;
+  width: 42.9847538451%;
+  height: 199px;
+}
+
+.school-extracurriculars-image {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 5.9921875%;
+  z-index: 75;
+  width: 176px;
+  height: auto;
+  overflow: hidden;
+}
+
+.school-extracurriculars-text {
+  position: absolute;
+  top: 175px;
+  left: 0;
+  z-index: 76;
+  width: 100%;
+  font-size: 1em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.scouting {
+  position: absolute;
+  top: 0;
+  left: 76.0209760273%;
+  z-index: 70;
+  width: 23.9726027397%;
+  height: 201px;
+}
+
+.scouting-picture {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 68;
+  width: 175px;
+  height: auto;
+  overflow: hidden;
+}
+
+.scouting-text {
+  position: absolute;
+  top: 175px;
+  left: 0;
+  z-index: 69;
+  width: 100%;
+  font-size: 1.056em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.screenshot {
+  position: absolute;
+  left: 64.9194208115%;
+  width: 35.0785340314%;
+  height: 561px;
+}
+
+.skills {
+  float: left;
+  width: 100%;
+  height: 221px;
+}
+
+.skills-screen {
+  position: absolute;
+  top: 535px;
+  left: 0;
+  right: 0;
+  z-index: 87;
+  width: 78.7037037037%;
+  height: 221px;
+  margin: 0 auto;
+}
+
+.skills-text {
+  float: left;
+  clear: both;
+  width: 99.9701286764%;
+  height: 168px;
+  margin-top: 18px;
+}
+
+.skills-text-first-column {
+  float: left;
+  width: 40.5882352941%;
+  font: 400 1.111em/1.38 'Museo Sans';
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.skills-text-second-column {
+  float: left;
+  width: 40.5882352941%;
+  margin-left: 18.79238%;
+  font: 400 1.111em/1.38 'Museo Sans';
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.skills-title {
+  float: left;
+  width: 18.5294117647%;
+  margin-left: 40.73989%;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  font-size: 1.333em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
 .stackoverflow {
   display: block;
   position: relative;
   float: left;
+  z-index: 39;
   width: 23.4953703703%;
   height: 172px;
   margin: 20px 0 0 1.96398%;
@@ -458,7 +848,7 @@ body {
   top: 172px;
   left: 0;
   right: 0;
-  z-index: 48;
+  z-index: 38;
   width: 100%;
   height: 35px;
   margin: 0 auto;
@@ -478,9 +868,10 @@ body {
   display: block;
   position: relative;
   float: left;
+  z-index: 43;
   width: 23.4953703703%;
   height: 172px;
-  margin-left: 2.03993%;
+  margin-left: 2.03451%;
   border-radius: 5px;
   background-color: rgb(235, 186, 31);
   overflow: hidden;
@@ -496,7 +887,7 @@ body {
   top: 172px;
   left: 0;
   right: 0;
-  z-index: 51;
+  z-index: 41;
   width: 100%;
   height: 35px;
   margin: 0 auto;
@@ -508,15 +899,13 @@ body {
   top: 123px;
   left: 0;
   right: 0;
-  z-index: 23;
+  z-index: 13;
   width: 764px;
   height: 561px;
   margin: 0 auto;
 }
 
 .surveyfill .description-body {
-  float: left;
-  width: 56.4136125654%;
   height: 458px;
   margin-top: 59px;
 }
@@ -526,6 +915,13 @@ body {
   width: 45.7076566125%;
   height: 61px;
   margin: 0 auto;
+}
+
+.ascvd-app-header .image,
+.canafeed-app-header .image,
+.surveyfill-app-header .image {
+  float: left;
+  width: 61px;
 }
 
 .canafeed-app-name,
@@ -538,19 +934,28 @@ body {
   color: rgb(0, 0, 0);
 }
 
+.surveyfill-description {
+  float: left;
+  clear: both;
+  width: 100%;
+  min-height: 74px;
+  margin-top: 23px;
+  font-size: 1em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
 .surveyfill-screenshot {
-  position: absolute;
-  left: 64.9194208115%;
-  z-index: 16;
-  width: 35.0785340314%;
-  height: 561px;
+  z-index: 6;
 }
 
 ._container {
   position: relative;
+  float: left;
   width: 100%;
-  height: 885px;
-  margin: 0 auto;
+  height: 768px;
+  overflow: visible;
 }
 
 .canafeed-2 {
@@ -558,51 +963,43 @@ body {
   top: 123px;
   left: 0;
   right: 0;
-  z-index: 33;
+  z-index: 23;
   width: 764px;
   height: 561px;
   margin: 0 auto;
 }
 
-.image-10,
-.image-4 {
-  float: left;
-  clear: both;
-  width: 172px;
-  margin-left: 30.15879%;
-}
-
 .image-11 {
-  position: relative;
-  float: left;
-  z-index: 1;
-  width: 268px;
-}
-
-.image-12 {
-  position: absolute;
-  top: 82px;
-  left: 8.5820895522%;
-  z-index: 2;
-  width: 227px;
-}
-
-.image-6 {
   width: 172px;
   margin: 342px auto 0;
 }
 
-.image-7 {
-  position: relative;
+.image-12,
+.image-5 {
   float: left;
-  z-index: 14;
   width: 268px;
 }
 
-.image-8 {
+.image-13 {
   position: absolute;
   top: 84px;
   left: 8.2089552238%;
-  z-index: 15;
+  z-index: 5;
   width: 226px;
+}
+
+.image-6 {
+  position: absolute;
+  top: 82px;
+  left: 8.5820895522%;
+  z-index: 100;
+  width: 227px;
+}
+
+.image-4,
+.image-9 {
+  float: left;
+  clear: both;
+  width: 172px;
+  margin-left: 30.15879%;
 }

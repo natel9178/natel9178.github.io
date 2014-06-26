@@ -1,8 +1,10 @@
 (function() {
-  var $ascvdScreen = $('.js-ascvd-screen');
   var $surveyFillScreen = $('.js-survey-fill-screen');
   var $canaFeedScreen = $('.js-cana-feed-screen');
+  var $cubeUtilitiesScreen = $('.js-cube-utilities-screen');
+  var $ascvdScreen = $('.js-ascvd-screen');
   var $backButton = $('.js-back-button');
+  var $aboutMeScreen = $('.js-about-me-screen');
   var $contactMeCaption = $('.js-contact-me-caption');
   var $contactMe = $('.js-contact-me');
   var $githubCaption = $('.js-github-caption');
@@ -19,6 +21,7 @@
   var $ascvdRisk = $('.js-ascvd-risk');
   var $aboutMeCaption = $('.js-about-me-caption');
   var $aboutMe = $('.js-about-me');
+  var $buttonContainer = $('.js-button-container');
   var $homeScreen = $('.js-home-screen');
 
 
@@ -27,12 +30,15 @@
 
   var secondRow = 172-35;
   var secondDefault = 172;
+  var aboutMeOpen = 0;
 
   $(document).ready(function() {
     $ascvdScreen.hide();
     $surveyFillScreen.hide();
     $canaFeedScreen.hide();
     $backButton.hide();
+    $aboutMeScreen.hide();
+    $cubeUtilitiesScreen.hide();
   });
 
   $aboutMe.hover(
@@ -42,6 +48,13 @@
       $aboutMeCaption.stop().animate({"top":firstDefault});
     }
   );
+
+  $aboutMe.click(function(){
+    $aboutMeScreen.fadeIn();
+    $backButton.fadeIn();
+    $buttonContainer.fadeOut();
+    aboutMeOpen = 1;
+  });
 
   $ascvdRisk.hover(
     function() {
@@ -93,6 +106,12 @@
     }
   );
 
+  $cubeUtilities.click(function(){
+    $cubeUtilitiesScreen.fadeIn();
+    $backButton.fadeIn();
+    $homeScreen.fadeOut();
+  });
+
   $stackOverflow.hover(
     function() {
       $stackOverflowCaption.stop().animate({"top":secondRow});
@@ -118,10 +137,20 @@
   );
 
   $backButton.click(function(){
+    if (aboutMeOpen == 1) {
+      $buttonContainer.fadeIn();
+      $backButton.fadeOut();
+      $aboutMeScreen.fadeOut();
+      aboutMeOpen = 0;
+    }
+    else {
     $canaFeedScreen.fadeOut();
     $ascvdScreen.fadeOut();
     $surveyFillScreen.fadeOut();
     $backButton.fadeOut();
+    $aboutMeScreen.fadeOut();
+    $cubeUtilitiesScreen.fadeOut();
     $homeScreen.fadeIn();
+    }
   });
 })();
