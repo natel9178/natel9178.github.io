@@ -1,8 +1,8 @@
 (function() {
-  var $surveyFillScreen = $('.js-survey-fill-screen');
-  var $canaFeedScreen = $('.js-cana-feed-screen');
-  var $cubeUtilitiesScreen = $('.js-cube-utilities-screen');
   var $ascvdScreen = $('.js-ascvd-screen');
+  var $cubeUtilitiesScreen = $('.js-cube-utilities-screen');
+  var $canaFeedScreen = $('.js-cana-feed-screen');
+  var $surveyFillScreen = $('.js-survey-fill-screen');
   var $backButton = $('.js-back-button');
   var $aboutMeScreen = $('.js-about-me-screen');
   var $contactMeCaption = $('.js-contact-me-caption');
